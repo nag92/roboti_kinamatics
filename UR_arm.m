@@ -21,15 +21,15 @@ end
 T_l = getT(getA(left));
 T_r = getT(getA(right));
 
-n = 100*100*100*50;
+n = 20*20*20*10;
 points_right = zeros(n,3);
 points_left = zeros(n,3);
 
 hold on
 plotArm(double(subs(T_r,[th_1 th_2 th_3 th_4 th_5 th_6],[0 -pi/2 0 -pi/2 0 0])))
 plotArm(double(subs(T_l,[th_1 th_2 th_3 th_4 th_5 th_6],[0 -pi/2 0 -pi/2 0 0])))
-full_cycle = linspace(0,2*pi,4);
-full_cycle = linspace(-pi,pi,4);
+full_cycle = linspace(0,2*pi,20);
+full_cycle = linspace(-pi,pi,10);
 
 T_l = T_l(1:3,4,end);
 T_r = T_r(1:3,4,end);
