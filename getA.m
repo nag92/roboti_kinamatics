@@ -11,16 +11,16 @@ function [ A ] = getA( links)
 for ii = 1:length(links(:,1))
     
     a= links(ii,1);
-    alpha=links(ii,2)*(pi/180);
+    alpha=links(ii,2);
     d=links(ii,3);
-    theta=links(ii,4)*(pi/180);
+    theta=links(ii,4);
     
 
    
     A(:,:,ii) = [ cos(theta) -sin(theta)*cos(alpha) sin(theta)*sin(alpha) a*cos(theta);
                  sin(theta)  cos(theta)*cos(alpha) -cos(theta)*sin(alpha) a*sin(theta);
                      0           sin(alpha)             cos(alpha)            d;
-                        0            0                     0                      1];
+                     0            0                     0                      1];
     
 end
 

@@ -17,7 +17,6 @@ zPlot = [0 z];
 xlabel('x')
 ylabel('y')
 zlabel('z')
-hold on
 view(3)
 plot3(xPlot,yPlot,zPlot,'black','LineWidth',4);
 plot3(xPlot,yPlot,zPlot,'r*','LineWidth',2);
