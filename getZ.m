@@ -12,7 +12,7 @@ function [ z ] = getZ( T )
 
 %allocate memory and intalize array
 n = length(T(1,1,:));
-z=zeros(3,n);
+
 
 %Get all the Zs
 for ii=1:n
