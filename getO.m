@@ -12,8 +12,8 @@ function [ o,on ] = getO( T )
 
 %allocate memory and intalize array
 n = length(T(1,1,:));
-o=zeros(3,n);
-o(:,1)=[0;0;0];
+
+%o(:,1)=[0;0;0];
 
 %Get all the Zs
 for ii=1:n
@@ -21,7 +21,7 @@ for ii=1:n
     o(:,ii+1) = T(1:3,4,ii);
     
 end
-
+%o = [ [0;0;0];o]
 on = T(1:3,4,end);
 
 end
