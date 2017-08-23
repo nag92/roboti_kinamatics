@@ -1,0 +1,10 @@
+
+syms theta_1 theta12
+link1 = [ 0 -90 0 theta_1]
+link2 = [ 1 0 0 theta_2]
+
+A = getA([link1]) 
+T = getT(A)
+
+T_solve = double(subs(T, [theta_1,the], [45]))
+plotArm(T_solve)
