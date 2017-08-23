@@ -13,7 +13,6 @@ function  [xPlot,yPlot, zPlot]= getPoints( T )
     xPlot = [0 x];
     yPlot = [0 y];
     zPlot = [0 z];
-    return
 
 end
 
