@@ -10,14 +10,15 @@ x = round(x',N);
 y = round(y',N);
 z = round(z',N);
 
-xPlot = [0 x];
-yPlot = [0 y];
-zPlot = [0 z];
+xPlot = [0 x]
+yPlot = [0 y]
+zPlot = [0 z]
 
 xlabel('x')
 ylabel('y')
 zlabel('z')
 view(3)
+hold on
 plot3(xPlot,yPlot,zPlot,'black','LineWidth',4);
 plot3(xPlot,yPlot,zPlot,'r*','LineWidth',2);
 plot3(xPlot(end),yPlot(end),zPlot(end),'mx','LineWidth',8);
