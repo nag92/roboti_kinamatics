@@ -3,7 +3,6 @@ function [ J ] = getLinkJacobian( T )
 %   Detailed explanation goes here
     
     n = length(T(1,1,:));
-    J = zeros(6,n);
     
     for ii=1:n
        

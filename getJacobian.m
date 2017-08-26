@@ -8,7 +8,7 @@ function [ j ] = getJacobian( T )
     
     for ii = 1:n
         j(:,ii) = getRevJ(z(:,ii),On,o(:,ii));
-       
+    end
 
 end
 

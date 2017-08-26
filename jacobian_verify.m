@@ -24,7 +24,21 @@ J_a = simplify([j1 j2]);
 J_b = simplify(getJacobian(T));
 
 
-getLinkJacobian(T)
+
+J = getLinkJacobian(T)
+
+m_1 = [ 2*eye(3), zeros(3);...
+       zeros(3), 5*eye(3)]
+
+m_2 = [ 3*eye(3), zeros(3);...
+        zeros(3), 6*eye(3)];
+    
+m(:,:,1) = m_1;
+m(:,:,2) = m_2;
+
+
+getInteriaMatrix(J,m)
+
 
 %subs(J,[theta_1,theta_2], [0,45]);
 %%
