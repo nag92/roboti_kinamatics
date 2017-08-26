@@ -22,6 +22,7 @@ for ii=1:n
     
 end
 %o = [ [0;0;0];o]
+
 on = T(1:3,4,end);
 
 end
