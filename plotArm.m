@@ -10,9 +10,9 @@ x = round(x',N);
 y = round(y',N);
 z = round(z',N);
 
-xPlot = [0 x]
-yPlot = [0 y]
-zPlot = [0 z]
+xPlot = [0 x];
+yPlot = [0 y];
+zPlot = [0 z];
 
 xlabel('x')
 ylabel('y')
